@@ -16,7 +16,7 @@ def ai():
         data = json.load(f)
     dulieu = request.args.get("tin_nhan")
     if dulieu in data:
-        dulieu = f"âm on {data[dulieu]["readings_on"]}, âm kun {data[dulieu]["readings_kun"]}"
+        dulieu = f"âm on {data[dulieu]["readings_on"]}, âm kun {data[dulieu]["readings_kun"]}, nghĩa {data[dulieu]["wk_meanings"]}, {data[dulieu]["wk_radicals"]}"
     else:
         dulieu="tôi không biết"
     return render_template("home.html",noidung=dulieu)
