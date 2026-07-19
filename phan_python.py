@@ -8,7 +8,7 @@ def home():
     username = request.args.get("username")
     password = request.args.get("password")
     print(username,password)
-    return render_template("home.html",noidung="AI tra tu vung")
+    return render_template("home.html",noidung="AI tra ")
 @app.route("/ai")
 def ai():
     import json
@@ -18,6 +18,6 @@ def ai():
     if dulieu in data:
         dulieu = f"âm on {data[dulieu]["readings_on"]}, âm kun {data[dulieu]["readings_kun"]}"
     else:
-        dulieu="I don't know"
+        dulieu="tôi không biết"
     return render_template("home.html",noidung=dulieu)
 app.run()
