@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url("static/anh.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            h1 {
+                font-family: arial;
+                font-size: 150%;
+                text-align: center;
+            }
+            input {
+                font-family: arial;
+                font-size: 150%;
+                margin: 0 auto;
+                text-align: center;
+                border: none;
+                background: center;
+            }
+            button {
+                background: none;
+                font-size: 150%;
+                text-align: center;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{noidung}}</h1>
+        <form action="/ai">
+            <input type="search" name="tin_nhan" placeholder="enter please">
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url("{{ url_for('static', filename='anh.jpg') }}");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            h1 {
+                color: black;
+                font-family: Arial;
+                text-align: center;
+                font-size: 150%;
+            }
+            input {
+                display: block;
+                margin: 0 auto;
+                font-size: 40px;
+                font-family: arial;
+                margin-bottom: 10px;
+                border: none;
+                background: none;
+            }
+            button {
+                display: block;
+                margin: 0 auto;
+                font-size: 40px;
+                font-family: arial;
+                border: none;
+                background: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form action="/home">
+            <input type="search" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <button>submit</button>
+        </form>
+    </body>
+</html>
