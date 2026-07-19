@@ -20,4 +20,5 @@ def ai():
     else:
         dulieu="tôi không biết"
     return render_template("home.html",noidung=dulieu)
-app.run()
+if __name__ == "__main__":
+    app.run()
